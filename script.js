@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
       let convertedValue;
       let errorMessage = "";
   
-      // Handle temperature conversions
       if (unitType === "temp") {
         if (fromType === "cel" && toType === "far") {
           convertedValue = (inputValue * 9 / 5) + 32;
@@ -29,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
   
-      // Handle length conversions
       else if (unitType === "length") {
         if (fromType === "m" && toType === "cm") {
           convertedValue = inputValue * 100;
@@ -44,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
   
-      // Handle currency conversions
       else if (unitType === "curr") {
         if (fromType === "dol" && toType === "rup") {
           convertedValue = inputValue * 73.92;
@@ -59,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
   
-      // Display the result or error message
       if (errorMessage) {
         ansValueInput.value = errorMessage;
       } else {
