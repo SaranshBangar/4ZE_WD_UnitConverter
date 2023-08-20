@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>4ZE Racing Unit Converter</title>
+</head>
+<body>
+    <div class="main-div">
+
+        <br>
+
+        <h1 class="main-heading">Unit Converter</h1>
+
+        <hr style="background-color: black; width: 75%; margin: 0 auto; height: 2px; border: 0;">
+
+        <br>
+
+        <div class="unitTypeTable">
+            <label for="unitType">Select the unit : </label>
+            <select name="unitType" id="unitType">
+                <option value="temp">Temperature</option>
+                <option value="length">Length</option>
+                <option value="curr">Currency</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div class="unitValueEntry">
+            <label for="unitValue" id="unitValueLabel">Enter the value : </label>
+            <input type="text" name="unitValue" id="unitValue">
+        </div>
+
+        <br>
+
+        <div class="fromTo">
+            <label for="type1">From : </label>
+            <select name="type1" id="type1">
+                <option value="cel">Celsius</option>
+                <option value="far">Fahrenheit</option>
+                <option value="cm">Centimeter</option>
+                <option value="m">Meter</option>
+                <option value="dol">Dollar</option>
+                <option value="rup">Rupee</option>
+            </select>
+
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+
+            <label for="type2">To : </label>
+            <select name="type2" id="type2">
+                <option value="cel">Celsius</option>
+                <option value="far">Fahrenheit</option>
+                <option value="cm">Centimeter</option>
+                <option value="m">Meter</option>
+                <option value="dol">Dollar</option>
+                <option value="rup">Rupee</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div class="conButton">
+            <button>Convert</button>
+        </div>
+
+        <br>
+
+        <div class="answer">
+            <label for="ansValue" id="ansValueLabel">Answer : </label>
+            <input type="text" name="ansValue" id="ansValue">
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
